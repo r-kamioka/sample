@@ -1,4 +1,5 @@
-const API_URL = 'http://3.112.236.163/api/tasks';
+// const API_URL = 'http://3.112.236.163/api/tasks';
+const API_URL = 'http://127.0.0.1:5000/tasks';
 
 // タスク一覧を表示
 async function renderTasks() {
