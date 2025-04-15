@@ -1,4 +1,4 @@
-const API_URL = 'http://127.0.0.1:5000/tasks';
+const API_URL = 'http://3.112.236.163/api/tasks';
 
 // タスク一覧を表示
 async function renderTasks() {
@@ -11,7 +11,8 @@ async function renderTasks() {
         const li = document.createElement('li'); // 新しいリスト項目を作る
         li.innerHTML = `
             <span>${task.title}</span>
-            <button onclick="deleteTask(${task.id})">削除</button>
+            <button class="delete-task" onclick="deleteTask(${task.id})">削除</button>
+
         `;
         taskList.appendChild(li); // 作ったリスト項目を表示部分に追加
     });
