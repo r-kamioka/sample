@@ -1,5 +1,5 @@
-// const API_URL = 'http://3.112.236.163/api/tasks';
-const API_URL = 'http://127.0.0.1:5000/tasks';
+const API_URL = 'http://3.112.236.163/api/tasks'; //EC2のパブリックIPアドレス
+//const API_URL = 'http://127.0.0.1:5000/tasks'; //ローカルで動作するAPI
 
 // タスク一覧を表示
 async function renderTasks() {
