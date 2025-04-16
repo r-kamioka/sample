@@ -2,7 +2,7 @@
 body {
     font-family: HGS創英角ﾎﾟｯﾌﾟ体, sans-serif; /* フォントを指定 */
     background-color: #bcf1e8; /* 背景色を薄い青に設定 */
-    color: #0a6e8f; /* 文字色を濃い青に設定 */
+    color: #383d3b; /* 文字色を濃いグレーに設定 */
     text-align: center; /* 全体の文字を中央揃え */
     
 }
@@ -11,28 +11,34 @@ body {
 #app {
     margin: 50px auto; /* 上下に50pxの余白を設定し、中央揃え */
     width: 300px; /* アプリの幅を300pxに設定 */
+    
 }
 
 /* 入力ボックスのスタイル */
 #new-task {
-    font-family: HGS創英角ﾎﾟｯﾌﾟ体, sans-serif; /* フォントを指定 */
+    font-family: Nunito Sans, sans-serif; /* フォントを指定 */
     width: calc(100% - 50px); /* ボックス幅を親要素の幅から50px減らす */
     padding: 10px; /* 内側の余白を10pxに設定 */
     margin-bottom: 10px; /* 下部に余白を設定 */
+    border: 3px solid #527a7a; /* 枠線の色と太さを指定 */
 
 }
 
 #add-task {
-    background-color: #95e8f8dc; /* 背景色を薄い青に設定 */
+    background-color:  #527a7a;; /* 背景色を濃い緑に設定 */
+    color: #f8f8f8; /* 文字色を白に設定 */
+    border: 1px solid #f8f8f8; /* 枠線の色と太さを指定 */
 }
 
 
 .delete-task {
-    
-    background-color: #ec9d0bee; /* 背景色を赤に設定 */
-    color: #fff; /* 文字色を白に設定 */
+    background-color:  #d8bfd8;; /* 背景色を薄いピンクに設定 */
+    color: #383d3b; /* 文字色を濃いグレーに設定 */
+    border: 2px solid #d786d7; /* 枠線の色と太さを指定 */
 }
-
+.delete-task:hover {
+    background-color:  #d786d7;; /* ホバー時の背景色を濃いピンクに設定 */
+  }
 
 
 /* タスクリスト全体の設定 */
@@ -45,9 +51,9 @@ body {
 #task-list li {
     display: flex; /* 子要素を横並びに配置 */
     justify-content: space-between; /* 左右に要素を配置 */
-    font-family: BIZ UDPゴシック, sans-serif; /* フォントを指定 */
-    background: #fff; /* 背景色を白に設定 */
-    color: #03151c; /* 文字色を濃いグレーに設定 */
+    font-family: Nunito Sans, sans-serif; /* フォントを指定 */
+    background: #f8f8f8; /* 背景色を白に設定 */
+    color: #2b2b2b; /* 文字色を濃いグレーに設定 */
     margin-bottom: 5px; /* 各タスクの間に余白を設定 */
     padding: 10px; /* 内側の余白を設定 */
     border-radius: 5px; /* 四隅を少し丸める */
